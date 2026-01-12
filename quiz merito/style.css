@@ -1,0 +1,71 @@
+/* Zmieniamy nagłówek na kolor "Merito" (ciemny granat/czarny) */
+h1 { 
+    margin-bottom: 20px; 
+    color: #003366; /* Granat */
+}
+
+/* Zmieniamy przycisk restartu na zielony "Merito" */
+.restart-btn {
+    background-color: #009640; /* Charakterystyczna zieleń */
+    color: white;
+    margin-top: 20px;
+}
+
+/* Kolor tła nagłówka w HTML (meta theme-color) warto zmienić w index.html na #009640 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 10px;
+    text-align: center;
+}
+
+h1 { margin-bottom: 20px; color: #3498db; }
+h2 { margin-bottom: 20px; font-size: 1.2rem; }
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background 0.2s;
+    touch-action: manipulation; /* Optymalizacja dotyku */
+}
+
+.btn:active { transform: scale(0.98); }
+
+.correct { background-color: #2ecc71 !important; color: white; }
+.wrong { background-color: #e74c3c !important; color: white; }
+
+.hidden { display: none; }
+.progress { margin-bottom: 15px; font-size: 0.9rem; color: #777; }
+
+.restart-btn {
+    background-color: #3498db;
+    color: white;
+    margin-top: 20px;
+}
